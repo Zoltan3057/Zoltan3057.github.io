@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Planning - Robotics Curriculum Vitae</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="1. TEB 开始与结束旋转
+2. hybrid a star在stage中仿真hybrid_a_star, 将其写成global_planner的插件，加入到move_base中
+3. GPS轨迹,"> 
+    <meta name="author" content="Mario"> 
+    <link rel="alternative" href="atom.xml" title="Robotics Curriculum Vitae" type="application/atom+xml"> 
+    <link rel="icon" href="/project/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/project/css/diaspora.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Robotics Curriculum Vitae</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://zoltan3057.github.io/project"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Planning</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Planning</h1>
+        <div class="stuff">
+            <span>十二月 02, 2021</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h3 id="1-TEB-开始与结束旋转"><a href="#1-TEB-开始与结束旋转" class="headerlink" title="1. TEB 开始与结束旋转"></a>1. TEB 开始与结束旋转</h3><p><img src="/project/teb_rotate.gif" alt="teb_rotate"></p>
+<h3 id="2-hybrid-a-star"><a href="#2-hybrid-a-star" class="headerlink" title="2. hybrid a star"></a>2. hybrid a star</h3><p>在stage中仿真hybrid_a_star, 将其写成global_planner的插件，加入到move_base中<br><img src="/project/2021/12/02/Planning/1.png" alt="stage_hybrid_a_star"></p>
+<h3 id="3-GPS轨迹录制与播放"><a href="#3-GPS轨迹录制与播放" class="headerlink" title="3. GPS轨迹录制与播放"></a>3. GPS轨迹录制与播放</h3><p>类比apollo中的GPS轨迹复现功能，读取定位数据，保存为json文件</p>
+<h3 id="4-mpc-follower"><a href="#4-mpc-follower" class="headerlink" title="4. mpc follower"></a>4. mpc follower</h3><p>一个用MPC控制小车循迹的功能，网上开源代码<br><img src="/project/2021/12/02/Planning/mpc.png" alt="MPC_Path_Follow"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/project/js/plugin.js"></script>
+<script src="/project/js/typed.js"></script>
+<script src="/project/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/project/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/project/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/project/photoswipe/photoswipe.min.js"></script>
+<script src="/project/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
