@@ -49,13 +49,15 @@
         <div class="stuff">
             <span>十二月 02, 2021</span>
             
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/projects/" rel="tag">projects</a></li></ul>
+
 
         </div>
         <div class="content markdown">
-            <h3 id="1-TEB-开始与结束旋转"><a href="#1-TEB-开始与结束旋转" class="headerlink" title="1. TEB 开始与结束旋转"></a>1. TEB 开始与结束旋转</h3><p><img src="/project/teb_rotate.gif" alt="teb_rotate"></p>
-<h3 id="2-hybrid-a-star"><a href="#2-hybrid-a-star" class="headerlink" title="2. hybrid a star"></a>2. hybrid a star</h3><p>在stage中仿真hybrid_a_star, 将其写成global_planner的插件，加入到move_base中<br><img src="/project/2021/12/02/Planning/1.png" alt="stage_hybrid_a_star"></p>
+            <h3 id="1-TEB-开始与结束旋转"><a href="#1-TEB-开始与结束旋转" class="headerlink" title="1. TEB 开始与结束旋转"></a>1. TEB 开始与结束旋转</h3><p><img src="/teb_rotate.gif" alt="teb_rotate"></p>
+<h3 id="2-hybrid-a-star"><a href="#2-hybrid-a-star" class="headerlink" title="2. hybrid a star"></a>2. hybrid a star</h3><p>在stage中仿真hybrid_a_star, 将其写成global_planner的插件，加入到move_base中<br><img src="/2021/12/02/Planning/1.png" alt="stage_hybrid_a_star"></p>
 <h3 id="3-GPS轨迹录制与播放"><a href="#3-GPS轨迹录制与播放" class="headerlink" title="3. GPS轨迹录制与播放"></a>3. GPS轨迹录制与播放</h3><p>类比apollo中的GPS轨迹复现功能，读取定位数据，保存为json文件</p>
-<h3 id="4-mpc-follower"><a href="#4-mpc-follower" class="headerlink" title="4. mpc follower"></a>4. mpc follower</h3><p>一个用MPC控制小车循迹的功能，网上开源代码<br><img src="/project/2021/12/02/Planning/mpc.png" alt="MPC_Path_Follow"></p>
+<h3 id="4-mpc-follower"><a href="#4-mpc-follower" class="headerlink" title="4. mpc follower"></a>4. mpc follower</h3><p>一个用MPC控制小车循迹的功能，网上开源代码<br><img src="/2021/12/02/Planning/mpc.png" alt="MPC_Path_Follow"></p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
@@ -161,6 +163,25 @@
 </div>
 
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 

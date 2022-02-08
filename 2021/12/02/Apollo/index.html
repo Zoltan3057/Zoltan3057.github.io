@@ -52,17 +52,19 @@
         <div class="stuff">
             <span>十二月 02, 2021</span>
             
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/projects/" rel="tag">projects</a></li></ul>
+
 
         </div>
         <div class="content markdown">
             <h3 id="对于Apollo代码做了相关阅读"><a href="#对于Apollo代码做了相关阅读" class="headerlink" title="对于Apollo代码做了相关阅读"></a>对于Apollo代码做了相关阅读</h3><ul>
-<li><p>配置运行模拟仿真环境LGSVL，公司电脑带不动，配置autoware更加简单一些<br><img src="/project/" alt="LGSVL"> </p>
-<img src="/project/2021/12/02/Apollo/1.png" class="" title="LGSVL"></li>
-<li><p>修改了canbus模块使其能与清扫机器人做通讯<br><img src="/project/2021/12/02/Apollo/2.png" alt="canbus"></p>
+<li><p>配置运行模拟仿真环境LGSVL，公司电脑带不动，配置autoware更加简单一些<br><img src="/" alt="LGSVL"> </p>
+<img src="/2021/12/02/Apollo/1.png" class="" title="LGSVL"></li>
+<li><p>修改了canbus模块使其能与清扫机器人做通讯<br><img src="/2021/12/02/Apollo/2.png" alt="canbus"></p>
 </li>
 <li><p>配置运行ROS与apollo做通讯的代码</p>
 </li>
-<li><p>提取了drivers/gnss中的代码，去除apollo框架换成ROS框架，使其能读取千寻与GPS的信号做差分定位，空旷情况下基本为固定解<br><img src="/project/2021/12/02/Apollo/3.png" alt="gnss"></p>
+<li><p>提取了drivers/gnss中的代码，去除apollo框架换成ROS框架，使其能读取千寻与GPS的信号做差分定位，空旷情况下基本为固定解<br><img src="/2021/12/02/Apollo/3.png" alt="gnss"></p>
 </li>
 </ul>
 
@@ -170,6 +172,25 @@
 </div>
 
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
